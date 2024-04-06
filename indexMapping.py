@@ -1,0 +1,34 @@
+indexMapping = {
+    "properties":{
+        "Series_Title":{
+            "type":"text"
+        },
+        "Released_Year":{
+            "type":"long"
+        },
+        "Genre":{
+            "type":"text"
+        },
+        "IMDB_Rating":{
+            "type":"long"
+        },
+        "Overview":{
+            "type":"text"
+        },
+        "Director":{
+            "type":"text"
+        },
+        "Cast":{
+            "type":"text"
+        },
+        "Column_for_embedding":{
+            "type":"text"
+        },
+        "Embedded_vectors":{
+            "type":"dense_vector",
+            "dims":768,
+            "index":True,
+            "similarity": "cosine"
+        }
+    }
+}
